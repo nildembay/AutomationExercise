@@ -1,0 +1,94 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-24T20:42:08.591Z",
+        "line": 3,
+        "name": "",
+        "description": "",
+        "id": ";",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3127075100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "kullanici \"productsList\" endpointine request gonderir.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"productsList\"",
+                  "offset": 10
+                }
+              ],
+              "location": "api.stepdef.ListProductApi.kullanici_endpointine_request_gonderir(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2977837600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "kullanici status kodu dogrular.",
+            "match": {
+              "location": "api.stepdef.ListProductApi.kullanici_status_kodu_dogrular()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanici urunlerin sayisinin 34 oldugunu dogrular",
+            "match": {
+              "arguments": [
+                {
+                  "val": "34",
+                  "offset": 30
+                }
+              ],
+              "location": "api.stepdef.ListProductApi.kullanici_urunlerin_sayisinin_oldugunu_dogrular(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 500089900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "kullanici 1000 den kucuk urunleri log dosyasina yazdirir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1000",
+                  "offset": 10
+                }
+              ],
+              "location": "api.stepdef.ListProductApi.kullanici_den_kucuk_urunleri_log_dosyasina_yazdirir(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@a"
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/apiFeatures/listProduct.feature",
+    "tags": []
+  }
+]
