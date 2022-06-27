@@ -21,7 +21,7 @@ public class Driver {
         }
 
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         return driver;
     }
 
